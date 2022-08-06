@@ -1,6 +1,8 @@
 const ImportantHelp = () => {
    return (
-      <h1>Important Help</h1>
+      <>
+         <h1>Чому важливо допомагати постраждавшим і ЗСУ?</h1>
+      </>
    )
 }
 

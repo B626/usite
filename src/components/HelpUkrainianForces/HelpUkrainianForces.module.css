@@ -1,0 +1,19 @@
+.mapimg {
+   width: 600px
+}
+
+.app{
+   display:flex
+}
+
+.appBlock{
+   margin-right: 50px;
+}
+
+.h1{
+   color: white;
+}
+
+.h2 {
+   color: white;
+}

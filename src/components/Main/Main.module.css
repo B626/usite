@@ -1,0 +1,38 @@
+.content{
+   display: flex;
+   flex-direction: column;
+}
+
+.contentWrapper{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.button {
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+   background-color: rgb(25, 148, 0);
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.buttonContainer{
+   margin-bottom: 30px;
+}
+
+.title{
+   margin-bottom: 5px;
+   color: white;
+   font-size: 40px;
+}
+
+.links{
+   text-align: center;
+}

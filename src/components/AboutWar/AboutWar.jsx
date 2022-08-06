@@ -1,12 +1,23 @@
+import s from './AboutWar.module.css'
+
 const AboutWar = () => {
    return (
       <div>
-         <h1>About War</h1>
-         <h2>A counter-offensive by Ukrainian troops in the south of the country is "gathering momentum" around the occupied city of Kherson, according to the UK Ministry of Defence (MoD).
+         <h1 className={s.title}>Про війну</h1>
+         <h2 className={s.content}>Росія з весни 2021 року нарощувала війська біля українського кордону і на території Білорусі. Ударне угруповання сягнуло щонайменше 150 тисяч.
 
-Ukraine's forces have been using new long-range artillery to target bridges across the Dnipro River and the MoD said that two recent attacks on the Antonivskiy Bridge in Kherson have left Russian troops "virtually cut off".
+            Розвідки США і Британії попереджали, що президент Росії Володимир Путін готує масштабне вторгнення, щоб змістити законно обрану владу України.
 
-Kherson was the first city in Ukraine to be taken by Russian forces after their invasion in February. The MoD said its loss would "severely undermine Russia's attempts to paint the occupation as a success".</h2>
+            24 лютого Росія напала на Україну по всій довжині спільного кордону, з території Білорусі й окупованого Криму.
+
+            Армія Росії обстріляла прикордонні застави, завдала удари з повітря по понад 40 об'єктах військової інфраструктури майже усіх регіонів України. Розпочався рух танкових колон і живої сили.
+
+            Путін назвав це «спецоперацією» з метою «демілітаризації і денацифікації України».
+
+            Армія України, Нацгвардія, поліція, Тероборона чинять запеклий опір.
+
+            Детальніше <a target='_blank' href="https://www.radiosvoboda.org/a/rosiya-ukrayina-zahroza-viyny/31703318.html">по посиланню</a>
+         </h2>
       </div>
    )
 }

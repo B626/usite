@@ -6,6 +6,15 @@ body {
    height: 100vh;
 }
 
+h1, h2, h3, h4, h5, p, span{
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   color: white;
+}
+
 .app {
    background-color: rgb(223, 33, 33);
    height: 100vh;
@@ -19,12 +28,17 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   position: relative;
+   z-index: 2;
+}
+
+.headerWrapper{
+
 }
 
 .wrapper{
    max-width: 1400px;
    margin: 0 auto;
-
 }
 
 .logo{
@@ -49,4 +63,18 @@ body {
 
 .navItem:first-child{
    margin-left: 0;
+}
+
+.link {
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+   background-color: rgb(25, 148, 0);
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.linkContainer{
+   margin-bottom: 30px;
+   margin-top: 15px;
 }
