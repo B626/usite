@@ -9,7 +9,7 @@ const Main = () => {
             <h1 className={s.title}>Разом до перемоги</h1>
             <div className={s.links}>
                <div className='linkContainer'>
-                  <Link className='link' to='/helpaffectedpeople'>Допомога постражджавшим</Link>
+                  <Link className='link' to='/helpaffectedpeople'>Допомогти постраждалим</Link>
                </div>
                <div className='linkContainer'>
                   <Link className='link' to='/helpukrainianforces'>Допомогти ЗСУ</Link>

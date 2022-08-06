@@ -55,6 +55,7 @@ h1 {
    letter-spacing: 0.8px;
    border-radius: 15px;
    transition: .3s;
+   align-items: center;
 }
 
 .navItem:hover {

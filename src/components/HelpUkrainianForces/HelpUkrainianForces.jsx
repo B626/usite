@@ -29,7 +29,7 @@ const HelpUkrainianForces = (props) => {
          <div className={s.appBlock}>
             <h1 className={s.h1}>Допомогти ЗСУ</h1>
             <h2 className={s.h2}>Виберіть локацію в якій ви хочете допомогти ЗСУ</h2>
-            <select onChange={e => onSelectChange(e)}>
+            <select value={activeOption} onChange={e => onSelectChange(e)}>
                <option selected disabled="disabled">Вибрати локацію</option>
                {Options}
             </select>

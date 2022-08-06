@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom'
+import EnemyLosses from '../EnemyLosses/EnemyLosses'
 import s from './AboutWar.module.css'
+import '../../App.css'
 
 const AboutWar = () => {
    return (
@@ -18,6 +21,9 @@ const AboutWar = () => {
 
             Детальніше <a target='_blank' href="https://www.radiosvoboda.org/a/rosiya-ukrayina-zahroza-viyny/31703318.html">по посиланню</a>
          </h2>
+         <div className='linkContainer'>
+            <Link className='link' to='/enemylosses'>Подивитись актуальні втрати ворога</Link>
+         </div>
       </div>
    )
 }

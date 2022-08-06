@@ -11,6 +11,7 @@ import HumanitarianHelp from './components/HumanitarianHelp/HumanitarianHelp'
 import PayForAffectedPeople from './components/PayForAffectedPeople/PayForAffectedPeople';
 import PayForUkrainianForces from './components/PayForUkrainianForces/PayForUkrainianForces';
 import { BrowserRouter } from 'react-router-dom';
+import EnemyLosses from './components/EnemyLosses/EnemyLosses';
 
 function App(props) {
   return (
@@ -26,7 +27,7 @@ function App(props) {
               </div>
               <nav>
                 <Link className='navItem' to='/aboutwar'>Про війну</Link>
-                <Link className='navItem' to='/helpaffectedpeople'>Допомога постраждалим</Link>
+                <Link className='navItem' to='/helpaffectedpeople'>Допомогти постраждалим</Link>
                 <Link className='navItem' to='/helpukrainianforces'>Допомогти ЗСУ</Link>
                 <Link className='navItem' to='/importanthelp'>Чому важливо допомагати</Link>
               </nav>
@@ -42,6 +43,7 @@ function App(props) {
             <Route path='/humanitarianhelp' element={<HumanitarianHelp />} />
             <Route path='/payforaffectedpeople' element={<PayForAffectedPeople />} />
             <Route path='/payforukrainianforces' element={<PayForUkrainianForces />} />
+            <Route path='/enemylosses' element={<EnemyLosses />} />
           </Routes>
         </div>
       </div>

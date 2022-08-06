@@ -2,7 +2,7 @@ import React from 'react'
 
 function PayForUkrainianForces() {
   return (
-    <h1>Pay For Ukrainian Forces</h1>
+    <h1>Взнесок для ЗСУ</h1>
   )
 }
 

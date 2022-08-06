@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-   // option: 2
    order: [
       { location: 'Херсон', need: 'Шлеми', amount: 12, priceOfUnit: 500 },
       { location: 'Миколаїв', need: 'Бронежилети', amount: 15, priceOfUnit: 700 },
