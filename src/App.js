@@ -1,9 +1,8 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import AboutWar from './components/AboutWar/AboutWar';
 import HelpAffectedPeople from './components/HelpAffectedPeople/HelpAffectedPeople'
 import HelpUkrainianForces from './components/HelpUkrainianForces/HelpUkrainianForces';
 import ImportantHelp from './components/ImportantHelp/ImportantHelp';
-import logo from './assets/img/logo.png'
 import './App.css'
 import Main from './components/Main/Main';
 import ProvideHome from './components/ProvideHome/ProvideHome';
@@ -12,27 +11,16 @@ import PayForAffectedPeople from './components/PayForAffectedPeople/PayForAffect
 import PayForUkrainianForces from './components/PayForUkrainianForces/PayForUkrainianForces';
 import { BrowserRouter } from 'react-router-dom';
 import EnemyLosses from './components/EnemyLosses/EnemyLosses';
+import PageNotFound from './components/PageNotFound/PageNotFound';
+import Header from './components/Header/Header';
 
-function App(props) {
+function App() {
+
   return (
     <BrowserRouter>
       <div className='app'>
         <div className='wrapper'>
-          <div className='headerWrapper'>
-            <header className='header'>
-              <div>
-                <Link to='/'>
-                  <img className='logo' src={logo} alt="" />
-                </Link>
-              </div>
-              <nav>
-                <Link className='navItem' to='/aboutwar'>Про війну</Link>
-                <Link className='navItem' to='/helpaffectedpeople'>Допомогти постраждалим</Link>
-                <Link className='navItem' to='/helpukrainianforces'>Допомогти ЗСУ</Link>
-                <Link className='navItem' to='/importanthelp'>Чому важливо допомагати</Link>
-              </nav>
-            </header>
-          </div>
+          <Header />
           <Routes>
             <Route path='/' element={<Main />} />
             <Route path='/aboutwar' element={<AboutWar />} />
@@ -44,6 +32,7 @@ function App(props) {
             <Route path='/payforaffectedpeople' element={<PayForAffectedPeople />} />
             <Route path='/payforukrainianforces' element={<PayForUkrainianForces />} />
             <Route path='/enemylosses' element={<EnemyLosses />} />
+            <Route path='*' element={<PageNotFound />} />
           </Routes>
         </div>
       </div>
@@ -51,8 +40,6 @@ function App(props) {
   );
 }
 
-
-// store={props.store.getState()}
 
 export default App;
 

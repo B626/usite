@@ -1,11 +1,11 @@
 import ufReducer from "./uf-reducer";
 import { applyMiddleware, combineReducers, createStore } from "redux";
 
-let reducers = combineReducers({
+const reducers = combineReducers({
    helpUkrainianForces: ufReducer
 })
 
-let store = createStore(reducers)
+const store = createStore(reducers)
 
 window.store = store
 

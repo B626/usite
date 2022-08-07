@@ -1,6 +1,6 @@
 const SET_ACTIVE_OPTION = 'SET-ACTIVE-OPTION'
 
-let initialState = {
+const initialState = {
    order: [
       { location: 'Херсон', need: 'Шлеми', amount: 12, priceOfUnit: 500 },
       { location: 'Миколаїв', need: 'Бронежилети', amount: 15, priceOfUnit: 700 },

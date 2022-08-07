@@ -10,13 +10,13 @@ const HelpAffectedPeople = () => {
          <h1 className={s.h1}>Допомогти постраждалим</h1>
          <div className={s.cards}>
             <div className={s.card__item}>
-               <img className={s.cardPic} src={pic1} alt="" />
+               <img className={s.cardPic} src={pic1} alt="Житло" />
                <div className='linkContainer'>
-                  <Link className='link' to='/providehome'>Надати житло</Link>
+                  <Link className='link' to='/providehome'>Надати / Отримати житло</Link>
                </div>
             </div>
             <div className={s.card__item}>
-               <img className={s.cardPic} src={help} alt="" />
+               <img className={s.cardPic} src={help} alt="Гуманітарна допомога" />
                <div className='linkContainer'>
                   <Link className='link' to='/humanitarianhelp'>Надати гуманітарну допомогу</Link>
                </div>

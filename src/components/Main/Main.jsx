@@ -4,7 +4,7 @@ import '../../App.css'
 
 const Main = () => {
    return (
-      <div className={s.contentWrapper}>
+      <main className={s.contentWrapper}>
          <div className={s.content}>
             <h1 className={s.title}>Разом до перемоги</h1>
             <div className={s.links}>
@@ -16,7 +16,7 @@ const Main = () => {
                </div>
             </div>
          </div>
-      </div>
+      </main>
 
    )
 }

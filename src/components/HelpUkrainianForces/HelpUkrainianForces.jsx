@@ -9,17 +9,15 @@ import '../../App.css'
 const HelpUkrainianForces = (props) => {
    const order = useSelector((state) => state.order.order)
    const activeOption = useSelector((state) => state.order.activeOption)
-   console.log(order)
-   console.log(activeOption)
    const dispatch = useDispatch()
    function onSelectChange(e) {
       dispatch(setActiveOption(e.target.value))
       console.log(e.target.value)
    }
-   let Options = order.map((e, index) => e.location && <option key={index} value={e.location}>{e.location}</option>)
-   let Needs = order.map(e => e.location === activeOption && <h2 className={s.h2}>{e.need} в кількості: {e.amount}</h2>)
-   let Prices = order.map(e => e.location === activeOption && <h2 className={s.h2} >Разом коштують: {e.priceOfUnit * e.amount}грн</h2>)
-   let PricesForUnit = order.map(e => e.location === activeOption && <h2 className={s.h2}>Ціна за одну одиницю: {e.priceOfUnit}грн</h2>)
+   const Options = order.map((e, index) => e.location && <option key={index} value={e.location}>{e.location}</option>)
+   const Needs = order.map(e => e.location === activeOption && <h2 className={s.h2}>{e.need} в кількості: {e.amount}</h2>)
+   const Prices = order.map(e => e.location === activeOption && <h2 className={s.h2} >Разом коштують: {e.priceOfUnit * e.amount}грн</h2>)
+   const PricesForUnit = order.map(e => e.location === activeOption && <h2 className={s.h2}>Ціна за одну одиницю: {e.priceOfUnit}грн</h2>)
    return (
       <div className={s.app}>
          <div className={s.appBlock}>

@@ -15,6 +15,15 @@ h1 {
    color: white;
 }
 
+h2 {
+   color: white;
+}
+
+.wrapper {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
 .app {
    background-color: rgb(223, 33, 33);
    height: 100vh;
@@ -24,47 +33,6 @@ h1 {
    background-size: cover;
 }
 
-.header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   position: relative;
-   z-index: 2;
-}
-
-.headerWrapper{
-
-}
-
-.wrapper{
-   max-width: 1400px;
-   margin: 0 auto;
-}
-
-.logo{
-   width: 100px;
-}
-
-.navItem{
-   margin-left: 50px;
-   text-decoration: none;
-   text-transform: uppercase;
-   color: rgb(255, 255, 255);
-   font-weight: 600;
-   font-size: 13px;
-   letter-spacing: 0.8px;
-   border-radius: 15px;
-   transition: .3s;
-   align-items: center;
-}
-
-.navItem:hover {
-   text-decoration: underline;
-}
-
-.navItem:first-child{
-   margin-left: 0;
-}
 
 .link {
    color: white;
@@ -78,4 +46,26 @@ h1 {
 .linkContainer{
    margin-bottom: 30px;
    margin-top: 15px;
+}
+
+.navItem{
+   margin-left: 50px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: rgb(255, 255, 255);
+   font-weight: 600;
+   font-size: 13px;
+   letter-spacing: 0.8px;
+   transition: .3s;
+   align-items: center;
+}
+
+.activeLink{
+   color: rgb(34, 206, 0);
+   font-weight: 600;
+   font-size: 13px;
+   letter-spacing: 0.8px;
+   margin-left: 50px;
+   text-transform: uppercase;
+   text-decoration: none;
 }

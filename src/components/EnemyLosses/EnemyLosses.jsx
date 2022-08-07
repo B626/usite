@@ -42,7 +42,7 @@ function EnemyLosses() {
           </li>
           <li className={s.losses_item}>РСЗВ: {enemyLosses.stats.mlrs}</li>
           <li className={s.losses_item}>
-            засобів ППО: {enemyLosses.stats.aa_warfare_systems}
+            Засобів ППО: {enemyLosses.stats.aa_warfare_systems}
           </li>
           <li className={s.losses_item}>
             Гелікоптерів: {enemyLosses.stats.helicopters}
@@ -54,7 +54,7 @@ function EnemyLosses() {
             БПЛА: {enemyLosses.stats.uav_systems}
           </li>
           <li className={s.losses_item}>
-            кораблів/катерів: {enemyLosses.stats.warships_cutters}
+            Кораблів/катерів: {enemyLosses.stats.warships_cutters}
           </li>
           <li className={s.losses_item}>
             Спеціальної техніки: {enemyLosses.stats.special_military_equip}
