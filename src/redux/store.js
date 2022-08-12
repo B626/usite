@@ -1,6 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import order from './slices/optionSlice'
+import ufOrder from './slices/helpUkrainianForcesSlice'
+import imOrder from './slices/helpImmigrantsSlice'
 
 export const store = configureStore({
-   reducer: {order}
+   reducer: {
+      ufOrder,
+      imOrder
+   }
 })
+

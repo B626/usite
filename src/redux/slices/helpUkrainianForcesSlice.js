@@ -1,34 +1,30 @@
-const SET_ACTIVE_OPTION = 'SET-ACTIVE-OPTION'
+import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-   order: [
+   ufOrder: [
       { location: 'Херсон', need: 'Шлеми', amount: 12, priceOfUnit: 500 },
       { location: 'Миколаїв', need: 'Бронежилети', amount: 15, priceOfUnit: 700 },
       { location: 'Запоріжжя', need: 'Тепловізори', amount: 21, priceOfUnit: 200 },
       { location: 'Харків', need: 'Автомати АК-47', amount: 67, priceOfUnit: 400 },
       { location: 'Маріуополь', need: 'Пікапи', amount: 4, priceOfUnit: 1900 },
       { location: 'Ізюм', need: 'Тепловізори', amount: 12, priceOfUnit: 200 },
-      { location: 'Гуляйполе', need: 'Гранати', amount: 32, priceOfUnit: 90 },
-   ]
+      { location: 'Гуляйполе', need: 'Гранати', amount: 32, priceOfUnit: 90 }
+   ],
+   activeOption: undefined
 }
 
-const ufReducer = (state = initialState, action) => {
-   switch(action.type) {
-      case SET_ACTIVE_OPTION: {
-         return {
-            ...state,
-            ufPage: action.ufPage
-         };
+const helpUkrainianForcesSlice = createSlice({
+   name: 'options',
+   initialState,
+   reducers: {
+      setActiveOption(state, action) {
+         state.activeOption = action.payload
       }
-      default: 
-         return state
    }
-}
+})
 
-export const setActiveOption = (ufPage) => {
-   return {
-      type: SET_ACTIVE_OPTION, ufPage: ufPage
-   }
-}
+export const { setOrders } = helpUkrainianForcesSlice.actions;
 
-export default ufReducer
+export const { setActiveOption } = helpUkrainianForcesSlice.actions;
+
+export default helpUkrainianForcesSlice.reducer 
